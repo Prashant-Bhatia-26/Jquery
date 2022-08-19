@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideDown("slow")
+            })
+        })
+    </script>
+    <style>
+        #flip,
+        #panel {
+
+            padding: 5px;
+            text-align: center;
+            background-color: red;
+            border: solid 1px #EB090D;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="flip">click to slide down the panel</div>
+    <div id="panel">helooo javatpoint.com</div>
+</body>
+
+</html>

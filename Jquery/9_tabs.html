@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Jquery tabs</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#mydiv").tabs();
+        });
+    </script>
+    <style type="text/css">
+        #mydiv{
+            font-size: 14px;
+        }
+        #mydiv div ,#mydiv p{
+            background: #ffffff;
+        }
+        .ui-widget-header {
+            background: #b9cd6d;
+            border: 1px solid #b9cd6d;
+            color :#ffffff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <ul>
+            <li><a href="#tab1">My tab 1</a></li>
+            <li><a href="#tab2">My tab 2</a></li>
+            <li><a href="#tab3">My tab 3</a></li>
+        </ul>
+        <div id="tab1">
+            <p>
+                Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 Tab 1 
+            </p>
+        </div>
+        <div id="tab2">
+            <p>
+                Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 Tab 2 
+            </p>
+        </div>
+        <div id="tab3">
+            <p>
+                Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 Tab 3 Para 1 
+            </p>
+        </div>
+        </div><hr>
+    </body>
+    </html>

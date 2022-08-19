@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <title>Draggable</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            //For Draggable
+            $("#mydiv").draggable();
+            $("#myhomediv span").draggable({
+                containment:"#myhomediv"
+            });
+            $("#myhorizontaldiv span").draggable({
+                axis:"x"
+            });
+            $("#myverticaldiv span").draggable({
+                axis:"y"
+            });
+
+             //For resizable
+             $("#resize").resizable();
+
+        });
+    </script>
+    <style>
+       /* For Draggable */
+        #myverticaldiv,#myhorizontaldiv,#myhomediv,#mydiv
+        {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            background-color: blueviolet;
+            color:aqua;
+            font-size: large;
+            font-weight: bold;
+            border: 3px cornflowerblue;
+        }
+        /* For resizable */
+        #resize
+        {
+            width: 150px;
+            height: 150px;
+            padding: 10px;text-align: center;
+            margin: 0px;
+            background-color: crimson;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h3>1) Draggable</h3>
+    <div id="mydiv">
+        <p>Hello Students....</p>
+    </div>
+    <hr>
+    <div id="myhomediv">
+        <span>This is my home and i can move within it only...</span><br><br>
+    </div>
+    <hr>
+    <div id="myhorizontaldiv">
+        <span>I can move only horizontaly...</span><br><br>
+    </div>
+    <hr>
+    <div id="myverticaldiv">
+        <span>I can move only verticaly...</span><br><br>
+    </div>
+    <hr>
+    <h3>2) Resizable</h3>
+    <div id="resize">
+        <p>I can change my size....</p>
+    </div>
+    <hr>
+</body>
+</html>

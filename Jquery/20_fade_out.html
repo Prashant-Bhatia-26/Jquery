@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#d2").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+            $("#d1").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>see the fadein() function</p>
+    <button id="d2">click to fade out boxes</button>&nbsp;&nbsp;
+    <button id="d1">click to fade in boxes</button><br>
+
+    <div id="div1" style="width: 800px;height: 80px;background-color: aqua"></div>
+    <div id="div2" style="width: 800px;height: 80px;background-color: blue"></div>
+    <div id="div3" style="width: 800px;height: 80px;background-color: red"></div>
+</body>
+
+</html>

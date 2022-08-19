@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sortable</title>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js">
+    </script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <style>
+        #sort10 #sort11
+        {
+            list-style-type:none ;
+            margin: 0;
+            padding: 0;
+            width: 80%;
+        }
+        #sort10 li, #sort11 li
+        {
+            margin : 10px;
+            padding: 20px;
+            font-size: 17px;
+            height: 16px;
+        }
+        .default
+        {
+            height: 30px;
+            background: burlywood;
+            border:1px solid salmon;
+            color: turquoise;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#sort10").sortable();
+            $("#sort11").sortable();
+            $("#sort10").sortable({
+                connectWith:"#sort11,#sort10"
+        });
+            $("#sort11").sortable({
+                connectWith:"#sort10,#sort11"
+        });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+    <div class="wrap1">
+      <h3>List 1</h3>
+      <ul id="sort10">
+        <li class="default">A</li><br>
+        <li class="default">B</li><br>
+        <li class="default">C</li><br>
+        <li class="default">D</li><br>
+      </ul>  
+    </div>
+    <div>
+        <h3>List 2</h3>
+      <ul id="sort11">
+        <li class="default">a</li><br>
+        <li class="default">b</li><br>
+        <li class="default">c</li><br>
+        <li class="default">d</li><br>
+      </ul>  
+    </div>
+    </div>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Spinner</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script>
+        $(document).ready(function()
+        {
+            $("#valuelist").spinner();
+        }
+        );
+        </script>
+        <style>
+            #valuelist
+            {
+                width: 100px;
+                color: red !important;
+                font-weight: bold !important;
+            }
+        </style>
+</head>
+<body>
+    <div id="example">
+        <input type="text" id="valuelist" value="0">
+    </div>
+</body>
+</html>
